@@ -63,13 +63,13 @@ const CustomerTable = ({ customerData }) => {
                                     <TableCell align="center" width="250">{row.email}</TableCell>
                                     <TableCell align="right" width="250">
                                         <Box style={{ display: "flex", flexDirection: 'row', justifyContent: 'center' }}>
-                                            <Button variant="contained" style={{ marginRight: 15}} onClick={() => {
+                                            <Button variant="contained" style={{ marginRight: 15, backgroundColor: '#3A9776', color: 'white'}} onClick={() => {
                                             setCurrCustomer(row)
                                             setIsOpen(true)
                                             }}
                                             > Edit
                                             </Button>
-                                            <Button variant="contained" onClick={() => {
+                                            <Button variant="contained" style={{backgroundColor: '#f72525', color: 'white'}} onClick={() => {
                                                 setCurrCustomer(row)
                                                 setIsOpenDelete(true)
                                             }}

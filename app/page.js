@@ -100,13 +100,13 @@ export default function ResponsiveDrawer() {
       >
         <Toolbar style={{ backgroundColor: '#FFFFFF' }}>
           <IconButton
-            color="black"
+            style={{color: 'black'}}
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
             sx={{ mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon />
+            <MenuIcon/>
           </IconButton>
           <Typography variant="h5" noWrap component="div" className={classes.myHead}>
             CUSTOMERS
